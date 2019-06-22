@@ -10,7 +10,7 @@ In this phase of the project, you create a backend for the PetClinic application
 * Code for the `OwnerController`
 * Code for the `OwnerService`
 * Code for the `OwnerRepository`
-* Models for `Owner` and `Pet`
+* Models for `Owner`, `Pet` and `PetType`
 * A `FakeDatabase`
 * Supporting interfaces for the `FakeDatabase` (`Modifiable` and `CrudRepository`)
 
