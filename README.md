@@ -6,7 +6,7 @@ In this phase of the project, you create a backend for the PetClinic application
 [PetClinic Reference Application](http://petclinic.cognizantacademy.com)
 
 #### What You Are Given
-You are given the following:
+
 * Code for the `OwnerController`
 * Code for the `OwnerService`
 * Code for the `OwnerRepository`
