@@ -25,7 +25,7 @@ Use the following patterns to complete this phase of the code:
 * Polymorphism (inheritance)
 * Designing to interfaces
 
-###### Bonus
+###### Bonus Activity (medium)
 * There is a design flaw in the `FakeDatabase` and how it stores data.  See if you can figure out what it is.
 * Hint:  It has nothing to do with the code in the `FakeDatabase` itself.  It has to do with how models are stored in the `FakeDatabase`.
 
