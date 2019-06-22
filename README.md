@@ -27,4 +27,5 @@ Use the following patterns to complete this phase of the code:
 ###### Notes
 
 - Use the existing code as a pattern for the rest of your code.
+- In this phase, you do NOT use Spring or Spring Boot.  Just plain ol' Java.
 - In this phase, don't worry about handling errors.
