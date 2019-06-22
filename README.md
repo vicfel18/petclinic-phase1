@@ -11,7 +11,7 @@ You are given the following:
 - Code for the `OwnerService`
 - Code for the `OwnerRepository`
 - A `FakeDatabase`
-Supporting interfaces for the `FakeDatabase` (`Modifiable` and `CrudRepository`)
+- Supporting interfaces for the `FakeDatabase` (`Modifiable` and `CrudRepository`)
 
 ###### What You Need To Complete
 - Complete the design and implement classes for the rest of the models (`Pet`, `Visit`, `Vet`).
