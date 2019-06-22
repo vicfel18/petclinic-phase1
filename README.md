@@ -10,11 +10,12 @@ You are given the following:
 * Code for the `OwnerController`
 * Code for the `OwnerService`
 * Code for the `OwnerRepository`
+* Models for `Owner` and `Pet`
 * A `FakeDatabase`
 * Supporting interfaces for the `FakeDatabase` (`Modifiable` and `CrudRepository`)
 
 #### What You Need To Complete
-* Complete the design and implement classes for the rest of the models (`Pet`, `Visit`, `Vet`).
+* Complete the design and implement classes for the rest of the models (`Pet` (you'll have to add code to this existing model), `Visit`, `Vet`).
 * Implement controllers, services and repositories for each of the models.
 
 Use the following patterns to complete this phase of the code:
