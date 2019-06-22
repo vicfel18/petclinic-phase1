@@ -3,7 +3,7 @@
 #### Overview
 In this phase of the project, you create a backend for the PetClinic application based on the existing PetClinic website at: 
 
-http://petclinic.cognizantacademy.com
+[PetClinic Reference Application](http://petclinic.cognizantacademy.com)
 
 #### What You Are Given
 You are given the following:
