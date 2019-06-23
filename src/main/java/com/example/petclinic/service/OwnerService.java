@@ -10,38 +10,33 @@ public class OwnerService {
     private OwnerRepository ownerRepository;
 
     public OwnerService(OwnerRepository ownerRepository) {
+
         this.ownerRepository = ownerRepository;
     }
 
+    public Owner add(Owner owner) {
 
-    public Owner saveOwner(Owner owner) {
-
-        Owner result = this.ownerRepository.create(owner);
-        return result;
+        return this.ownerRepository.create(owner);
     }
 
-    public Owner getOwner(Owner owner) {
+    public Owner get(int id) {
 
-        Owner result = this.ownerRepository.read(owner);
-        return result;
+        return this.ownerRepository.read(new Owner(id));
     }
 
-    public Owner modifyOwner(Owner owner) {
+    public Owner modify(Owner owner) {
 
-        Owner result = this.ownerRepository.update(owner);
-        return result;
+        return this.ownerRepository.update(owner);
     }
 
-    public boolean deleteOwner(Owner owner) {
+    public boolean delete(Owner owner) {
 
-        boolean result = this.ownerRepository.delete(owner);
-        return result;
+        return this.ownerRepository.delete(owner);
     }
 
     public List<Owner> getAll() {
 
-        List<Owner> result = ownerRepository.getAll();
-        return result;
+        return ownerRepository.getAll();
     }
 
 

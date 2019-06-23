@@ -2,26 +2,27 @@ package com.example.petclinic.controller;
 
 import org.junit.Test;
 
+import static org.junit.Assert.*;
+
 public class OwnerControllerTest {
 
-    // TODO implement tests
     @Test
-    public void saveOwner() {
+    public void add() {
     }
 
     @Test
-    public void getOwner() {
+    public void get() {
     }
 
     @Test
-    public void modifyOwner() {
+    public void modify() {
     }
 
     @Test
-    public void deleteOwner() {
+    public void delete() {
     }
 
     @Test
-    public void getAllOwners() {
+    public void getAll() {
     }
 }

@@ -37,13 +37,13 @@ public class PetClinicDriver {
         Owner owner4 = new Owner(4, "Bart Simpson", "742 Evergreen Terrace", "Springfield", "9395550113");
 
         // save owners to database
-        ownerController.saveOwner(owner1);
-        ownerController.saveOwner(owner2);
-        ownerController.saveOwner(owner3);
-        ownerController.saveOwner(owner4);
+        ownerController.add(owner1);
+        ownerController.add(owner2);
+        ownerController.add(owner3);
+        ownerController.add(owner4);
 
         // get all owners from database and display them
-        List<Owner> owners = ownerController.getAllOwners();
+        List<Owner> owners = ownerController.getAll();
         display(owners);
 
         // create some pets and add them to an existing owner

@@ -16,7 +16,7 @@ public class FakeDatabase {
 
     // To add a table, add a value to this enum.  An empty table will be added automatically with the name used here.
     private enum TableName {
-        OWNER, PET
+        OWNER, PET, VISIT, VET
     }
 
     private static FakeDatabase INSTANCE = null;
@@ -26,12 +26,17 @@ public class FakeDatabase {
     // Uses 'singleton' pattern to ensure we're only ever dealing with one instance of our database
     private FakeDatabase() {
 
+        initializeTables();
+
+    }
+
+    private void initializeTables() {
+
         // initialize 'database'
         for (TableName tableName : TableName.values()) {
             List<?> table = new ArrayList<>();
             map.put(tableName.name(), table);
         }
-
     }
 
     // implemented as part of singleton pattern
@@ -90,7 +95,7 @@ public class FakeDatabase {
      * @return
      * @throws InvalidObjectException
      */
-    public <T extends Modifiable> T modify(T t) throws InvalidObjectException {
+    public <T extends Modifiable> T modify(T t) {
 
         // using reflection to get table name
         String tableName = t.getClass().getSimpleName().toUpperCase();
@@ -134,6 +139,12 @@ public class FakeDatabase {
 
         List<T> result = (List<T>) this.map.get(tableName.toUpperCase());
         return result;
+    }
+
+    public void dropAll() {
+
+        this.map.clear();
+        initializeTables();
     }
 
     /**
