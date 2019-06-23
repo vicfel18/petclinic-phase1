@@ -5,6 +5,8 @@ In this phase of the project, you create a backend for the PetClinic application
 
 [PetClinic Reference Application](http://petclinic.cognizantacademy.com)
 
+This phase of the project involves learning about software architecture patterns and how we use them together to create software that is extensible, robust, maintainable and reusable.
+
 #### What You Are Given
 
 * Code for the `OwnerController`
