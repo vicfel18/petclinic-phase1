@@ -15,6 +15,12 @@ public class PetClinicDriver {
 
     public static void main(String[] args) {
 
+        testApp();
+
+    }
+
+    private static void testApp() {
+
         // Owner dependency injection (DI) setup
         OwnerRepository ownerRepository = new OwnerRepository();
         OwnerService ownerService = new OwnerService(ownerRepository);
