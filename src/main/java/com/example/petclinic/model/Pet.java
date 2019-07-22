@@ -3,12 +3,8 @@ package com.example.petclinic.model;
 import java.util.Date;
 import java.util.Objects;
 
-public class Pet implements Modifiable {
+public class Pet {
 
     // TODO Using the Owner model class and based on the existing website, complete this model class
 
-    @Override
-    public int getId() {
-        return 0;
-    }
 }

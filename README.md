@@ -73,7 +73,7 @@ Create test classes for each of the controllers you added by completing the foll
 * There is a design flaw in the `FakeDatabase` and how it stores data.  See if you can figure out what it is.
 * Hint:  It has nothing to do with the code in the `FakeDatabase` itself.  It has to do with how models are stored in the `FakeDatabase`.
 
-#### Notes
+#### Important Notes
 * Use the existing code as a pattern to complete the rest of your code.
 * We are NOT creating a front end for this application.  The `PetClinicDriver` acts as the front end (or view) for this application. Feel free to add to the driver as needed.
 * In this phase, you do NOT use Spring or Spring Boot.  Just plain ol' Java.
