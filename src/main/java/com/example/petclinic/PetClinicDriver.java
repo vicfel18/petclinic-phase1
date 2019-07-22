@@ -21,14 +21,18 @@ public class PetClinicDriver {
 
     private static void testApp() {
 
-        // Owner dependency injection (DI) setup
+        // Owner 3-Tier setup using manual dependency injection (DI)
         OwnerRepository ownerRepository = new OwnerRepository();
         OwnerService ownerService = new OwnerService(ownerRepository);
         OwnerController ownerController = new OwnerController(ownerService);
 
-        // TODO add other 3-tier DI setups here
+        // TODO Create Pet 3-Tier setup using manual dependency injection
 
-        // ***** Owner testing *****
+        // TODO Create Visit 3-Tier setup using manual dependency injection
+
+        // TODO Create Vet 3-Tier setup using manual dependency injection
+
+        // Owner test data
 
         // create our owners
         Owner owner1 = new Owner(1, "Homer Simpson", "742 Evergreen Terrace", "Springfield", "9395550113");
@@ -46,16 +50,15 @@ public class PetClinicDriver {
         List<Owner> owners = ownerController.getAll();
         display(owners);
 
-        // create some pets and add them to an existing owner
-        Pet pet1 = new Pet(1, "Godzilla", new Date(), PetType.LIZARD);
-        Pet pet2 = new Pet(2, "Santa's Little Helper", new Date(), PetType.DOG);
-        owner4.addPet(pet1);
-        owner4.addPet(pet2);
 
-        // display the owner info again
-        display(owners);
+        // Pet test data
+        // TODO Add test data for pets
 
-        // TODO add other tests for other models here
+        // Visit test data
+        // TODO Add test data for visits
+
+        // Vet test data
+        // TODO Add test data for vets
     }
 
     /**
