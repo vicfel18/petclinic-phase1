@@ -19,7 +19,7 @@ public class OwnerController {
         return this.ownerService.add(owner);
     }
 
-    public Owner get(int id) {
+    public Owner get(Long id) {
 
         return this.ownerService.get(id);
     }

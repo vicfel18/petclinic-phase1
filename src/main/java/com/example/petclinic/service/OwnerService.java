@@ -19,7 +19,7 @@ public class OwnerService {
         return this.ownerRepository.create(owner);
     }
 
-    public Owner get(int id) {
+    public Owner get(Long id) {
 
         return this.ownerRepository.read(new Owner(id));
     }

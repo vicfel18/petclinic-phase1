@@ -1,11 +1,22 @@
 # PetClinic Phase 1
 
 #### Overview
-In this phase of the project, you create a backend for the PetClinic application based on the existing PetClinic website at: 
+In this phase of the project, you learn about basic software architecture patterns by starting to create a backend for the PetClinic application based on the existing PetClinic website.   
+These patterns ensure our software is extensible, robust, maintainable and reusable.
 
 [PetClinic Reference Application](http://petclinic.cognizantacademy.com)
 
-This phase of the project involves learning about software architecture patterns and how we use them together to create software that is extensible, robust, maintainable and reusable.
+#### Objectives
+###### Primary Objectives
+
+* Implement a `3-Tier` pattern by completing the `TODOs` below.
+* Implement an `MVC` pattern by completing the `TODOs` below.
+* Implement a simple `inheritance` pattern by completing the `Coding to Interfaces - Repository` section below.
+* Implement simple `Coding to Interfaces` patterns by completing the `Coding to Interfaces - Service` and `Coding to Interfaces - Controller` sections below.
+
+###### Bonus Objectives
+* Implement unit test stubs by completing bonus activity 1.
+* Identify software design flaws/limitations by completing bonus activity 2.
 
 #### What You Are Given
 
@@ -52,13 +63,6 @@ This phase of the project involves learning about software architecture patterns
   - `boolean delete(T t);`
   - `List<T> getAll();`
 * Modify each of your controllers to implement `BasicController`.
-
-###### Patterns
-The following patterns are used to complete this phase of the code:
-* MVC
-* 3-Tier application
-* Inheritance
-* Designing to interfaces
 
 #### Bonus Activities
 ###### Bonus Activity 1 (easy) 
