@@ -9,17 +9,17 @@ import java.util.Objects;
  */
 public class Owner implements Modifiable {
 
-    private int id;
+    private Long id;
     private String name;
     private String address;
     private String city;
     private String phoneNumber;
 
-    public Owner(int id) {
+    public Owner(Long id) {
         this(id, null, null, null, null);
     }
 
-    public Owner(int id, String name, String address, String city, String phoneNumber) {
+    public Owner(Long id, String name, String address, String city, String phoneNumber) {
 
         this.id = id;
         this.name = name;
@@ -30,11 +30,11 @@ public class Owner implements Modifiable {
     }
 
     @Override
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
