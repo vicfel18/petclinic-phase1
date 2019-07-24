@@ -7,11 +7,16 @@ These patterns ensure our software is extensible, robust, maintainable and reusa
 [PetClinic Reference Application](http://petclinic.cognizantacademy.com)
 
 #### Objectives
+###### Primary Objectives
 
 * Implement a `3-Tier` pattern by completing the `TODOs` below.
 * Implement an `MVC` pattern by completing the `TODOs` below.
 * Implement a simple `inheritance` pattern by completing the `Coding to Interfaces - Repository` section below.
 * Implement simple `Coding to Interfaces` patterns by completing the `Coding to Interfaces - Service` and `Coding to Interfaces - Controller` sections below.
+
+###### Bonus Objectives
+* Implement unit test stubs by completing bonus activity 1.
+* Identify software design flaws/limitations by completing bonus activity 2.
 
 #### What You Are Given
 
@@ -58,13 +63,6 @@ These patterns ensure our software is extensible, robust, maintainable and reusa
   - `boolean delete(T t);`
   - `List<T> getAll();`
 * Modify each of your controllers to implement `BasicController`.
-
-###### Patterns
-The following patterns are used to complete this phase of the code:
-* MVC
-* 3-Tier application
-* Inheritance
-* Designing to interfaces
 
 #### Bonus Activities
 ###### Bonus Activity 1 (easy) 
