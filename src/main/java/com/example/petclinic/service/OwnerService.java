@@ -1,11 +1,12 @@
 package com.example.petclinic.service;
+import com.example.petclinic.utility.Validator;
 
 import com.example.petclinic.model.Owner;
 import com.example.petclinic.repository.OwnerRepository;
 
 import java.util.List;
 
-public class OwnerService {
+public class OwnerService implements BasicService<Owner> {
 
     private OwnerRepository ownerRepository;
 
@@ -14,7 +15,10 @@ public class OwnerService {
         this.ownerRepository = ownerRepository;
     }
 
-    public Owner add(Owner owner) {
+    public Owner add(Owner owner) throws IllegalArgumentException {
+        if(!Validator.phoneValidation(owner.getPhoneNumber())){
+            throw new IllegalArgumentException();
+        }
 
         return this.ownerRepository.create(owner);
     }
@@ -25,6 +29,9 @@ public class OwnerService {
     }
 
     public Owner modify(Owner owner) {
+        if(!Validator.phoneValidation(owner.getPhoneNumber())){
+            throw new IllegalArgumentException();
+        }
 
         return this.ownerRepository.update(owner);
     }

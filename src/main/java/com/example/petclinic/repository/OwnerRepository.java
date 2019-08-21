@@ -2,16 +2,10 @@ package com.example.petclinic.repository;
 
 import com.example.petclinic.model.Owner;
 
+import javax.swing.plaf.basic.BasicIconFactory;
 import java.util.List;
 
-public class OwnerRepository implements CrudRepository<Owner> {
-
-    protected FakeDatabase fakeDatabase;
-
-    public OwnerRepository() {
-
-        this.fakeDatabase = FakeDatabase.getInstance();
-    }
+public class OwnerRepository extends BasicRepository implements CrudRepository<Owner> {
 
     @Override
     public Owner create(Owner owner) {

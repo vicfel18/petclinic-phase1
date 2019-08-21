@@ -14,6 +14,7 @@ public class Owner implements Modifiable {
     private String phoneNumber;
 
     public Owner(Long id) {
+
         this(id, null, null, null, null);
     }
 
